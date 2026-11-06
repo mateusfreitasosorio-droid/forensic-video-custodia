@@ -1,0 +1,23 @@
+# Tema "terminal": fundo quase preto, verde fósforo e fonte monoespaçada.
+# Os componentes próprios (painéis, mapa de blocos, barra do tempo) usam as
+# mesmas cores, definidas em ui.py.
+
+[theme]
+base = "dark"
+primaryColor = "#00ff9c"
+backgroundColor = "#05080a"
+secondaryBackgroundColor = "#0b1410"
+textColor = "#b8f5c8"
+font = "monospace"
+
+[client]
+# "viewer": esconde as opções de desenvolvedor do menu e desliga o atalho C
+# (limpar caches). O atalho R é desligado em ui.ajustar_pagina().
+toolbarMode = "viewer"
+
+[server]
+address = "localhost"   # só esta máquina acessa o app
+headless = false
+
+[browser]
+gatherUsageStats = false
